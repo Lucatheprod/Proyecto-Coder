@@ -4,7 +4,7 @@ from django.template import loader, Template, Context
 from AppCoder.models import Curso, Estudiantes, Profesor, Entregable
 
 def inicio(request):
-    return HttpResponse("Vista Inicio")
+    return render(request, 'index.html')
 
 def cursos(request):
     contexto = {
